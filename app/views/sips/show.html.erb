@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @sip.name %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @sip.category %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @sip.contact %>
+</p>
+
+<p>
+  <b>Lon:</b>
+  <%= @sip.lon %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @sip.lat %>
+</p>
+
+
+<%= link_to 'Edit', edit_sip_path(@sip) %> |
+<%= link_to 'Back', sips_path %>
