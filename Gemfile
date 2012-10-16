@@ -5,7 +5,7 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'sqlite3'
 gem 'heroku'
-gem 'haml'
+gem 'haml-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -14,7 +14,7 @@ group :assets do
 end
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
 end
 
 gem 'jquery-rails'

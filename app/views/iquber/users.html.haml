@@ -1,0 +1,14 @@
+%table.table.table-bordered
+  %caption
+    %h3 Iqubers
+  %thead
+    %th Name
+    %th email Address
+    %th Confirmed
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.name
+        %td= user.email
+        %td= user.iquber
+        %td= link_to "Confirm", iqubers_confirm_path(:user=>current_user)

@@ -7,8 +7,9 @@ class IquberController < ApplicationController
 
   def confirm
     user=User.find(params[:user])
-    user.confirm
+    user.iquber=true
     user.save
+    redirect_to root_path and return
   end
   
   private

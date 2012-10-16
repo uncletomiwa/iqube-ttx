@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121016201538) do
+ActiveRecord::Schema.define(:version => 20121016205957) do
 
   create_table "sips", :force => true do |t|
     t.string   "name"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20121016201538) do
     t.boolean  "iquber",                 :default => false
     t.boolean  "pushed",                 :default => false
     t.boolean  "username"
+    t.string   "name"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
