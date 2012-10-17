@@ -6,7 +6,7 @@ class IquberController < ApplicationController
   end
 
   def confirm
-    user=User.find(params[:user])
+    user=User. (params[:user])
     user.iquber=true
     user.save
     redirect_to root_path and return
@@ -15,6 +15,6 @@ class IquberController < ApplicationController
   private
   
   def iquber
-    current_user.iquber
+    current_user.iquber||false
   end
 end
