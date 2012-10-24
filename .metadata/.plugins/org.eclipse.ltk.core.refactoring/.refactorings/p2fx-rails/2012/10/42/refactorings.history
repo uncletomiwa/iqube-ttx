@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;p2fx-rails/app/assets/javascripts/knockout-2.1.0.js&apos; to &apos;knockout.js&apos;" description="Rename resource &apos;knockout-2.1.0.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="app/assets/javascripts/knockout-2.1.0.js" name="knockout.js" stamp="1350661093844" updateReferences="true"/>
+</session>

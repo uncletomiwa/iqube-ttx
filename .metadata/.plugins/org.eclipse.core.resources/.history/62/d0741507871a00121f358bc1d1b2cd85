@@ -1,0 +1,22 @@
+%container
+  %div.hero-unit
+    %div.row
+      %div.span6
+        %h1.page-header p2fx-rails
+        %blockquote
+          %p.lead
+            Pleased to Find 
+            %strong {X}
+            %small
+              %cite{:title => "An Iquberbase Definition"}
+                {X} refers to an object (A resturant, a church, a market or anything you can imagine).
+              %cite{:title => "At Iqubebase, We love location aware objects"}
+                any {X} around you can be found by pressing this button
+                = link_to "Find out More", help_path, :class=> "btn btn-primary btn-large"
+      %div.span6.hidden-phone
+        %dl
+          %dt Sip Profile
+          %dd Sip Profile also means {X}
+          %dd {X} has an identity
+          %dd {X} is has a location
+          %dd {X} has is tagged with a category
