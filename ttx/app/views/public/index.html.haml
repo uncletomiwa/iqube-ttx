@@ -1,0 +1,14 @@
+.container
+  .hero-unit
+    .row-fluid
+      %h1.page-header Tech Training Expo
+      %blockquote
+        %p.lead
+          = link_to "Find out More", about_path, :class=> "btn btn-primary btn-large"
+  .row-fluid
+  %ul.thumnails    
+    -@courses.each do |course|
+      %li.span2
+        %a.thumbnail{:href=>"#"}
+          .img{:src=>"http://placehold.it/300x200"} 
+          = course

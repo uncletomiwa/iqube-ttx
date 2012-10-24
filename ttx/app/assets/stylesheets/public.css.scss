@@ -1,0 +1,23 @@
+// Place all the styles related to the public controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'bootstrap';
+@import 'bootstrap-responsive';
+@mixin box_sizing{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* forms */
+input, textarea, select, .uneditable-input{
+  border: 1px solid #bbb;
+  width: 100%; 
+  padding: 10px;
+  height: auto !important;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+@media (max-width: 480px) {}
+@media (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 979px) {}

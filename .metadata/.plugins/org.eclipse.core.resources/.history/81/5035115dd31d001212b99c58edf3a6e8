@@ -1,0 +1,12 @@
+%.container
+  %.hero-unit
+    %.row-fluid
+      %.span6
+        %h1.page-header Tech Training Expo
+        %blockquote
+          %p.lead
+            Pleased to Find 
+              = link_to "Find out More", about_path, :class=> "btn btn-primary btn-large"
+      %div.span6.hidden-phone
+        %dl
+          %dt 

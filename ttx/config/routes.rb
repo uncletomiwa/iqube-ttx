@@ -1,4 +1,17 @@
 Ttx::Application.routes.draw do
+  resources :speakers
+
+  get "public/index"
+
+  get "public/contact"
+
+  get "public/about"
+  
+  match 'about' => "public#about"
+  match 'contact' => "public#contact"
+
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +61,7 @@ Ttx::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'public#index'
 
   # See how all your routes lay out with "rake routes"
 

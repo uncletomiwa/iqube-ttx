@@ -1,0 +1,14 @@
+class PublicController < ApplicationController
+  def index
+    # @courses=["Java", "C++", "SMS Applications", "PHP", "Twitter API", "Facebook API", "Mobile Apps Development"]
+  end
+
+  def about
+  end
+
+  def contact
+  end
+
+  def help
+  end
+end
